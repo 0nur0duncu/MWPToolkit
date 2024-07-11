@@ -1,0 +1,6 @@
+Since it is trained with the old version, I recommend you to install it in anaconda environment to avoid conflicts. If you do the following pytorch installation with cudatoolkit 11.3 or 11.6 stable versions, it will be error-free.
+```pip3 install torch --index-url https://download.pytorch.org/whl/cu116```
+behind the pytorch installation
+We install the necessary libraries using the command 
+``` pip install -r requirements.txt```
+If you have any questions, you can check the closed issues in the main repo.
