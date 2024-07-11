@@ -16,7 +16,7 @@ filterwarnings('ignore')
 
 def main():
     # a MWP sample
-    problem = "Bryan took a look at his books as well. If Bryan has 56 books in each of his 9 bookshelves, how many books does he have in total?"
+    problem = "3*10"
     trained_model_dir = "./trained_model/Saligned-mawps-single"
     # load config
     config = Config.load_from_pretrained(trained_model_dir)
@@ -81,7 +81,8 @@ def main():
 
     equation = trans_symbol_2_number(equation, data_dict['number list'])
     # final equation
-    print(equation)
+    result = eval(''.join(equation))
+    print(''.join(equation),"=",result)
 
 
 if __name__ == '__main__':
